@@ -1,7 +1,7 @@
 FROM php:alpine
 
 RUN apk add --no-cache \
-    nodejs nodejs-npm \
+    nodejs npm \
     git subversion libzip-dev zip \
     # ZLib
     && docker-php-ext-install zip \
